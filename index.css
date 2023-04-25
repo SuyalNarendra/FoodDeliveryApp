@@ -1,0 +1,40 @@
+#head{
+    text-align: center;
+}
+
+#head11{
+ background-color: beige;
+ 
+}
+
+#head1{
+    background-color: rgb(172, 64, 85);
+    /* text-align: center; */
+   }
+
+#head2{
+    background-color: rgb(33, 117, 82);
+   }
+
+ .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+ } 
+ .nav-item >ul {
+    list-style-type: none;
+    display: flex;
+ }
+
+ .nav-item > ul > li{
+    padding: 10px;
+ }
+ .img {
+    width: 100px;
+    height: 100px;
+        padding-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;   
+    }
+
