@@ -1,39 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
 
+export const IMG_CLD_ID ="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
-const Title = ()=>{
-   return (
-        <h1 id="title">
-            <img src={require("./log.png")} className="img"/>
-        </h1>
-    )
-}
-const Imga= ()=>{
-    return (
-        <h1 id="title2">
-        THE OLD SPICES
-    </h1>
-    )
-}
-
-const Header = () => {
-
-    return(<div className="header"> 
-  <Title/>
-  <Imga/>
-  <div className="nav-item">
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
-  </div>
-
-</div> )}
-
-const restList =[
+  export  const restList =[
     {
         "cardType": "restaurant",
         "layoutAlignmentType": "VERTICAL",
@@ -1644,45 +1612,3 @@ const restList =[
         "parentWidget": false
       },
 ]
-
-const Card =(restLit) =>{
-    return(
-        
-        <div className="card">
-            
-            <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+ restLit.data.data.cloudinaryImageId}/>
-            <h3 style={{margin:"10px"}}>{restLit.data.data.name}</h3>
-            <h4 style={{margin:"10px"}}>{restLit.data.data.cuisines.join(",")}</h4>
-
-        </div>
-    )
-}
-
-const Body = ()=>{
-    return <div className="body"> 
-        {
-            restList.map(rst =>{
-          return <Card {...rst}/>
-            })
-            }
-         </div>
-}
-
-const Footer = ()=>{
-    return <div>Footer</div>
-}
-
-const AppLayout =() => {
-    return(
-        <div>
-        <Header/>
-        <Body/>
-        <Footer/>
-        </div>
-    )
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout/>);
