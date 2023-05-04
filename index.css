@@ -38,9 +38,9 @@ body {
         margin-bottom: 0px;   
     }
 
- .body{
+ .restList{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content:flex-start;
  }   
 

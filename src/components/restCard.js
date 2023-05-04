@@ -6,8 +6,8 @@ const Card =(restLit) =>{
         <div className="card">
             
             <img src={IMG_CLD_ID + restLit.data.data.cloudinaryImageId}/>
-            <h3 style={{margin:"10px"}}>{restLit.data.data.name}</h3>
-            <h5 style={{margin:"10px"}}>{restLit.data.data.cuisines.join(",")}</h5>
+            <h3 style={{margin:"10px" }}>{restLit.data.data.name}</h3>
+            <h5 style={{margin:"10px" }}>{restLit.data.data.cuisines.join(",")}</h5>
 
         </div>
     )
